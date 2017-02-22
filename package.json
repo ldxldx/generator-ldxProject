@@ -6,14 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "https://github.com/ldxldx/generator-ldxProject.git"
   },
   "keywords": [
     "yooman-generator"
   ],
-  "files": ["app"],
+  "homepage": "https://github.com/ldxldx/generator-ldxProject.git#readme",
+  "files": [
+    "app"
+  ],
   "author": "ldx",
   "license": "ISC",
   "dependencies": {
@@ -23,5 +26,8 @@
     "mocha": "^2.3.3",
     "yeoman-generator": "^0.24.1",
     "yosay": "^1.0.5"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.4"
   }
 }
