@@ -8,7 +8,7 @@
   },
   "repository":{
     "type": "git",
-    "url": "https://git.coding.net/ldxldx/generator-ldxProject.git"
+    "url": "https://github.com/ldxldx/generator-ldxProject.git"
   },
   "keywords": [
     "yooman-generator"
