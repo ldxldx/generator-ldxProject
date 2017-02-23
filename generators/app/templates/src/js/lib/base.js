@@ -1,5 +1,4 @@
-let $ajax = require('./ajax');
-import {WXhttp} from './http-url.js';
+import {WXhttp} from '../../../http-url';
 let Base = {
     /**
      * @description
@@ -144,8 +143,7 @@ let Base = {
     /**
      * @description 获取微信授权
      */
-    getWxAuthor: function (options) {
-        // let _options = options || {} ;
+    getWxAuthor: function () {
         //wx分享接口
         return new Promise(function (resolve, reject) {
             try {
@@ -189,4 +187,4 @@ let Base = {
         });
     }
 };
-export {Base};
+export default Base;

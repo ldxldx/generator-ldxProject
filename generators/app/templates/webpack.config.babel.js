@@ -21,7 +21,7 @@ let glob = require('glob');
 let CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 let UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 //debug标示
-import {CONFIG as projectConfig} from './src/js/lib/config';
+import {CONFIG as projectConfig} from 'config';
 let publicPath;
 if (projectConfig.localEnv) {//如果是本地测试环境
     publicPath = '/dist/';
