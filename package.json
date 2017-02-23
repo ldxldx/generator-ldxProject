@@ -1,6 +1,6 @@
 {
   "name": "generator-ldx",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "基于vue+webpack+es6的项目快速生成器",
   "main": "index.js",
   "scripts": {

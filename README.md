@@ -2,6 +2,8 @@
 
 基于yeoman构建 vue+webpack+es6 的项目
 
+[npm链接](https://www.npmjs.com/package/generator-ldx)
+
 ```
 -   website
     -   src  #代码开发目录
