@@ -67,26 +67,23 @@ let Vuepackage = generators.Base.extend({
 
   writing:function () {//生成目录结构阶段
     //默认源目录就是生成器的templates目录，目标目录就是执行`yo example`时所处的目录。调用this.template用Underscore模板语法去填充模板文件
-    this.log('xxxxxxxxxxxxxxxxx');
     this.directory('src', 'src');
     this.copy('.babelrc', '.babelrc');
     this.copy('.npmrc', '.npmrc');
+    this.copy('.gitignore', '.gitignore');
     this.copy('gulpfile.js', 'gulpfile.js');
     // this.copy('package.json', 'package.json');
-    this.copy('READMD.md', 'READMD.md');
+    this.copy('README.md', 'README.md');
+    this.copy('config.babel.js', 'config.babel.js');
     this.copy('webpack.config.babel.js', 'webpack.config.babel.js');
-    this.log(this.fs.read(this.templatePath('package.json')));
-
     let pkgTpl = _.template(this.fs.read(this.templatePath('package.json')));
-
     this.log(pkgTpl);
-
     this.fs.write(this.destinationPath('package.json'), pkgTpl(this.props));
   },
   generateClient: function() {
-    this.log(chalk.green('generateClient'));
     this.sourceRoot(path.join(__dirname, 'templates'));
     this.destinationPath('./');
+    this.log(chalk.green('generateClient'));
   },
   // install: function() {      //安装依赖
   //   this.installDependencies({

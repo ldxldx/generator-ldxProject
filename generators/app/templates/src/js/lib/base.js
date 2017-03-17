@@ -1,4 +1,4 @@
-import {WXhttp} from '../../../http-url';
+import {WXhttp} from '../http/http-url';
 let Base = {
   /**
    * @description

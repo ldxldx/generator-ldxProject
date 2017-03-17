@@ -23,7 +23,7 @@
         + js
         + html
     + node_modules   #所使用的nodejs模块
-    + config.js 接口-域 配置文件  
+    + config.babel.js 接口-域 配置文件  
     + http-url.js 接口
     + .babelrc  #bable配置
     + .gitignore  #ignore配置
@@ -46,7 +46,7 @@
 
 安装脚手架  
 
-    npm install -g generator-ldxProject  
+    npm install -g generator-ldx  
 
 在合适的地方创建一个文件夹，在文件夹下运行：
 

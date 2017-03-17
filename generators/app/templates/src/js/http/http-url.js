@@ -1,4 +1,4 @@
-import {CONFIG} from 'config';
+import {CONFIG} from '../../../config.babel';
 let _host = CONFIG.debugger ? 'http://mdev.zhaoyl.com' : 'http://m.zhaoyl.com';
 /**
  * @description 业务接口
